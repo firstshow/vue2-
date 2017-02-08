@@ -1,6 +1,6 @@
-# kf
+# VUE2.0
 
-> 快付小店APP
+> 商城未完全版
 
 ## Build Setup
 
