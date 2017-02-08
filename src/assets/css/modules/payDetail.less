@@ -1,0 +1,32 @@
+@import "./../../css/base";
+/**
+* 支付完成详情样式
+* create by ZC 2016/12/26
+**/
+
+.x-pay-item{
+  position: relative;
+  padding: 2rem 0;
+  .x-title{
+    font-size: 2.5rem;
+  }
+  &:before , &:after{
+    content: '';
+    position: absolute;
+    left:4%;
+    width:92%;
+    height:1px;
+    border-bottom: 1px solid @border;
+  }
+  &:before{
+    top:0;
+  }
+  &:after{
+    bottom:0;
+  }
+  .x-big-star{
+    margin: 0 .5rem;
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../assets/css/base";
+
+.x-store-item {
+  .x-transition();
+  padding: 1rem 0 1rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid @border;
+  .x-logo-box{
+    width:5.5rem;
+    height:4.5rem;
+  }
+  .x-content-box{
+    margin-left:1rem;
+    .x-store-info{
+      height:4.5rem;
+      border-bottom: 1px solid @border;
+      p{
+        padding:.15rem 0;
+        color: @gray-word;
+        font-size: .8rem;
+      }
+      .x-title{
+        font-size: 1.1rem;
+      }
+      .x-average-money{
+        i , span{
+          vertical-align: middle;
+        }
+      }
+    }
+    .x-store-discount{
+      i , span{
+        vertical-align: middle;
+      }
+      p{
+        padding:.3rem 0;
+        color: @gray-word;
+        font-size: .8rem;
+      }
+    }
+  }
+  &:active{
+    background-color: @active-color;
+  }
+}

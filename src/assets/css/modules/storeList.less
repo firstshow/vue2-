@@ -1,0 +1,58 @@
+@import "./../base";
+
+/**
+* 门店列表的样式
+* create by ZC 2016/12/26
+**/
+
+/**
+* 商家下拉选择样式
+*/
+.x-store-choose-box {
+  z-index: 120;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  border-bottom: 1px solid @border;
+  background-color: #fff;
+  .x-item{
+    width:33.33333333%;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    .x-title{
+      color:#484848;
+    }
+    .x-arrow{
+      display: inline-block;
+      margin-left:.8rem;
+      transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+
+      transform-origin:center;
+      -webkit-transform-origin:center;
+      -moz-transform-origin:center;
+      -o-transform-origin:center;
+      -ms-transform-origin:center;
+    }
+  }
+  .x-item.active{
+    .x-title{
+      color:#f00;
+    }
+    .x-arrow{
+      border-top-color: #f00;
+      .x-transform(rotate(180deg));
+    }
+  }
+}
+
+.x-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #afaca6;
+}

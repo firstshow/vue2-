@@ -1,0 +1,83 @@
+@import "../../../assets/css/base";
+/**
+* 会员卡详情模块的样式
+* create by ZC 2016/12/26
+**/
+
+.x-vip-detail-info-box{
+    position: relative;
+    padding-top: 2rem;
+    width:100%;
+    background: @blue;
+    .x-vip-detail-info{
+        margin-left:5%;
+        padding:1rem .5rem .5rem .5rem;
+        width:90%;
+        background: rgba(0,0,0,.7) url(./../../images/vip/icon/vip_detail_bg_icon.png) no-repeat center bottom;
+        background-size: 70% auto;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        .x-simple-item{
+            background-color: transparent;
+            .x-content{color: #fff;
+                h3.x-title{
+                    color: #fff;
+                }
+                span.x-subtitle{
+                    color: @gray-word;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+.x-vip-money-box{
+    padding: 1rem 0;
+    background-color: #fff;
+    ul{
+        width:100%;
+        li{
+            position: relative;
+            width:100%;
+            text-align: center;
+            color: @dark;
+            .x-title{
+                font-size: 1.4rem;
+            }
+            .x-money{
+                font-size: .9rem;
+                margin-top:.5rem;
+            }
+            &.x-border-right:after{
+                content: '';
+                position: absolute;
+                top:15%;
+                right:0;
+                width:1px;
+                height:70%;
+                border-right: 1px solid @border;
+            }
+        }
+    }
+}
+
+.x-vip-detail-btn-box{
+    position: relative;
+    padding: 1rem 5% ;
+    background-color: #fff;
+    .x-btn{
+        padding: .5rem 0;
+        width:40%;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 16px;
+        width:100%;
+        height:1px;
+        border-bottom: 1px solid @border;
+    }
+}

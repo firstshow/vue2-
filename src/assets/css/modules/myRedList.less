@@ -1,0 +1,116 @@
+@import "../../../assets/css/base";
+
+/**
+* 我的红包列表样式
+* create by ZC 2016/12/26
+**/
+/* 红包列表顶部样式 start */
+.x-my-redbag-head {
+    padding: .8rem 1rem;
+    background-color: @skin;
+    color:#fff;
+    .x-money{
+        h3 , span{
+            display: inline-block;
+        }
+        h3{
+            font-size: 2rem;
+        }
+    }
+    .x-btn{
+        padding:.2rem .5rem;
+        background-color: #f77175;
+        font-size: .9rem;
+        .x-transition();
+        .x-border-radius();
+        &:active{
+            background-color: #e17171;
+        }
+    }
+}
+/* 红包列表顶部样式 end */
+
+/* 红包列表样式 start */
+.x-redbag-list{
+    padding:.5rem;
+    .x-redbag-item{
+        margin-bottom: .5rem;
+        padding:2rem 1rem 0 1rem;
+        background: #fff url(./../../images/my/icon/redlist_topBg.png) top repeat-x;
+        .x-transition();
+        .x-content{
+            position: relative;
+            padding-bottom: .8rem;
+            .x-money{
+                font-size: .6rem;
+                font-weight: 500;
+                color:@red;
+                span{
+                    font-size: 2rem;
+                }
+            }
+            .x-logo{
+                margin-right: 1rem;
+                width:3rem;
+                height:3rem;
+            }
+            .x-title{
+                h3{
+                    margin-bottom: .2rem;
+                }
+                .x-status-icon{
+                    padding:.15rem .3rem;
+                    background-color: @red;
+                    color:#fff;
+                    font-size: .6rem;
+                    .x-border-radius(.1rem);
+                }
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                bottom:0;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                border-bottom: 1px solid @border;
+            }
+        }
+        .x-foot{
+            padding: .2rem 0;
+            color: @gray-word;
+            font-size: .6rem;
+        }
+        &:active{
+            background-color: @active-color;
+        }
+    }
+}
+/* 红包列表样式 end */
+
+/* 历史红包样式 start */
+.x-history-redbag-item{
+    padding: 2rem .5rem;
+    .x-content{
+        .x-title{
+            margin-bottom: .3rem;
+            font-size: 1rem;
+            color:@gray-word;
+        }
+        .x-subtitle{
+            color:#000;
+            font-size: 1.2rem;
+        }
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom:.5rem;
+        right: .5rem;
+        width: 1.5rem;
+        height: 1.2rem;
+        background: url(./../../images/icon/smile_monkey_icon.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+}
+/* 历史红包样式 end */

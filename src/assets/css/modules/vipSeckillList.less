@@ -1,0 +1,95 @@
+@import "../../../assets/css/base";
+
+/**
+* 会员秒杀列表样式
+* create by ZC 2016/12/26
+**/
+/* 我的秒杀导航条 start */
+.x-seckill-nav {
+    i , span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .x-seckill-icon{
+        width:2.8rem;
+        height:2rem;
+        background: url(./../../images/my/icon/seckill_icon.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+}
+/* 我的秒杀导航条 end */
+
+/* 会员秒杀列表 start */
+.x-seckill-list-box{
+    .x-seckill-item{
+        .x-img-box{
+            position: relative;
+            .x-store-info{
+                position: absolute;
+                left:0;
+                bottom:0;
+                padding: 1rem 0 .5rem .5rem;
+                width:100%;
+                background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Safari 5.1 - 6 */
+                background: -o-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Opera 11.1 - 12*/
+                background: -moz-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Firefox 3.6 - 15*/
+                background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)); /* 标准的语法 */
+                color:#fff;
+                i , span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .x-logo{
+                    width:2rem;
+                    height:2rem;
+                    background: url(./../../images/demo/demo_logo.png) no-repeat center;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        .x-des-box{
+            padding:.5rem .5rem 1rem .5rem;
+            background-color: #fff;
+            .x-title{
+                padding:.3rem 0;
+                font-size: .9rem;
+            }
+            .x-left{
+                .x-info{
+                    font-size: .8rem;
+                    color: @gray-word;
+                    p > span{
+                        font-size: 1.3rem;
+                    }
+                }
+                .x-number{
+                    padding:.3rem 0;
+                    color: @skin;
+                    font-size: .8rem;
+                    span{
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .x-right{
+                font-size: .8rem;
+                p:first-child{
+                    color: #fff;
+                    padding: .4rem 0;
+                    text-align: center;
+                    background-color: @skin;
+                    border-top-left-radius:.2rem;
+                    border-top-right-radius:.2rem;
+                }
+                p:last-child{
+                    padding: .4rem .5rem;
+                    border:1px solid @skin;
+                    color:@skin;
+                    border-bottom-left-radius:.2rem;
+                    border-bottom-right-radius:.2rem;
+                }
+            }
+        }
+    }
+}
+/* 会员秒杀列表 end */

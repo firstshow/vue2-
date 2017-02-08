@@ -1,0 +1,41 @@
+@import "../../assets/css/base";
+
+.x-store-evaluate-item {
+    position: relative;
+    padding:.5rem 1rem;
+    background-color: #fff;
+    .x-logo-box img{
+        width:3rem;
+        height:3rem;
+    }
+    .x-evaluate-box{
+        padding-left: 1rem;
+        .x-item{
+            width:100%;
+            &.x-photo-box{
+                margin-top: 5px;
+                font-size: 0;
+            }
+            .x-evaluate-img{
+                margin-bottom:5px;
+                width: 32%;
+                &:nth-child(3n-1){
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+
+    &.x-item-border:after{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 1rem;
+        width:100%;
+        height:1px;
+        border-bottom: 1px solid @border;
+        background: none;
+    }
+}

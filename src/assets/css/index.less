@@ -1,0 +1,226 @@
+/**
+* APP基础样式
+* 主要定义APP皮肤样式、兼容性的样式 可供其他样式调用
+* create by ZC 2016/10/16
+**/
+
+/*
+    初始化页面布局
+*/
+
+#app {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 640px;
+  margin: auto;
+  font-size: 13px;
+  background: #fff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// 默认margin值
+.default-margin {
+  margin: 1rem;
+}
+
+// 默认padding值
+.default-padding {
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+// flex布局
+.dis-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+}
+
+
+// inline-flex布局
+.dis-inline-flex {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+}
+
+/*flex 兼容写法 垂直居中*/
+
+.flex-vertical-center {
+  /* 12版 */
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  /* 09版 */
+  -webkit-box-align: center;
+}
+
+/*flex 兼容写法 垂直居上*/
+
+.flex-vertical-start {
+  /* 12版 */
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  /* 09版 */
+  -webkit-box-align: start;
+}
+
+/*flex 兼容写法 垂直居下*/
+
+.flex-vertical-end {
+  /* 12版 */
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  /* 09版 */
+  -webkit-box-align: end;
+}
+
+/*flex 兼容写法 水平居中*/
+
+.flex-horizontal-center {
+  /* 12版 */
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /* 09版 */
+  -webkit-box-pack: center;
+}
+
+/*flex 兼容写法 水平居左*/
+
+.flex-horizontal-start {
+  /* 12版 */
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  /* 09版 */
+  -webkit-box-pack: start;
+}
+
+/*flex 兼容写法 水平居右*/
+
+.flex-horizontal-end {
+  /* 12版 */
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  /* 09版 */
+  -webkit-box-pack: end;
+}
+
+/*flex 兼容写法 水平居两边*/
+
+.flex-horizontal-between {
+  /* 12版 */
+  -moz-justify-content: space-between !important;
+  -ms-justify-content: space-between !important;
+  -o-justify-content: space-between !important;
+  justify-content: space-between !important;
+  -webkit-justify-content: space-between !important;
+  /* 09版 */
+  -webkit-box-pack: justify !important;
+}
+
+/*flex 兼容写法 纵向排列*/
+.flex-column {
+  /* 12版 */
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  /* 09版 */
+  -webkit-box-orient: vertical;
+}
+
+
+// 换行，当宽度不够时候换行
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+}
+
+// 不换行，在同一行内显示
+.flex-nowrap {
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-lines: single;
+}
+
+.flex-num(@value : 0 1 auto) {
+  -moz-box-flex: @value; /* Firefox */
+  -webkit-box-flex: @value; /* Safari 和 Chrome */
+  box-flex: @value;
+  -webkit-flex: @value; /* Chrome */
+  -ms-flex: @value; /* IE 10 */
+  flex: @value;
+}
+
+// 阴影
+.x-shadow(@value : 0 1px 3px rgba(50,50,50,.1)) {
+  box-shadow: @value;
+  -webkit-box-shadow: @value;
+  -moz-box-shadow: @value;
+  -o-box-shadow: @value;
+}
+
+// 过渡
+.x-transition(@value : all .3s ease) {
+  transition: @value;
+  -webkit-transition: @value;
+  -moz-transition: @value;
+  -o-transition: @value;
+}
+
+.x-transform(@value) {
+  transform: @value;
+  -moz-transform: @value;
+  -o-transform: @value;
+  -webkit-transform: @value;
+}
+
+.text-overflow(@value: 1) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: @value;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  max-width: 90%;
+}
+
+// 圆角
+.x-border-radius(@value : .3rem) {
+  border-radius: @value;
+  -webkit-border-radius: @value;
+  -moz-border-radius: @value;
+  -o-border-radius: @value;
+}

@@ -1,0 +1,164 @@
+@import "../../../assets/css/base";
+/**
+* 门店详情样式
+* create by ZC 2016/10/16
+**/
+
+/* 头部轮播区域 strart */
+.x-store-head-box{
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    .x-store-follow-btn{
+        z-index: 10;
+        position: absolute;
+        top:1rem;
+        right:1rem;
+        padding:.3rem .5rem;
+        background-color: rgba(0,0,0,.5);
+        .x-border-radius();
+        color: #fff;
+        font-size: .7rem;
+        i , span{
+            vertical-align: middle;
+        }
+    }
+    .x-store-photo{
+        z-index: 10;
+        position: absolute;
+        left:0;
+        bottom:0;
+        padding: 1rem 0 .5rem .5rem;
+        width:100%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Safari 5.1 - 6 */
+        background: -o-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Opera 11.1 - 12*/
+        background: -moz-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,.8)); /* Firefox 3.6 - 15*/
+        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)); /* 标准的语法 */
+        color:#fff;
+        font-size: .9rem;
+    }
+}
+/* 头部轮播区域 end */
+
+/* 会员日 start */
+.x-store-vip-banner{
+    padding:.8rem 2.5rem;
+    background: url(./../../images/home/icon/store_member_day_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    color: #e60012;
+    .x-question-icon{
+        margin-left:10px;
+        width:1.2rem;
+        height:1.2rem;
+        line-height:1.2rem;
+        background-color: #fff;
+        text-align: center;
+        font-size: .9rem;
+        .x-border-radius(50%);
+    }
+}
+/* 会员日 end */
+
+/* 门店信息 start */
+.x-store-info-box{
+    padding:1rem 0 0 0;
+    background-color: #fff;
+    .x-title{
+        font-size: 1.2rem;
+    }
+    .x-class{
+        color: @gray-word;
+        font-size: .9rem;
+    }
+    .x-phone{
+        padding:0 1.6rem;
+        border-left:1px solid @border;
+        .x-phone-icon{
+            width:1.3rem;
+            height:1.3rem;
+        }
+    }
+    .x-location{
+        span{
+            .text-overflow();
+        }
+    }
+}
+/* 门店信息 end */
+
+/* 门店活动信息 start */
+.x-store-activity-box ,
+.x-store-evaluate-box,
+.x-store-guess-box{
+    margin-top: .5rem;
+}
+/* 门店活动信息 end */
+
+/* 底部买单栏 start */
+.x-store-btn-box{
+    z-index: 110;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:50px;
+    background-color: #fff;
+    .x-shadow(0 1px 3px rgba(50, 50, 50, 0.5));
+    .x-text{
+        .text-overflow();
+    }
+    .x-btn{
+        width:25%;
+        height:100%;
+    }
+}
+/* 底部买单栏 end */
+
+
+/* 会员门店的充值轮播栏 start */
+.x-store-slider-banner{
+    padding:1rem .5rem;
+    background-color: #fff;
+    overflow: hidden;
+    .x-text{
+        width:100%;
+        text-align: center;
+        color: @skin;
+    }
+}
+/* 会员门店的充值轮播栏 end */
+
+/* 会员服务信息 start */
+.x-store-vip-server-box{
+    background-color: #fff;
+    h3{
+        padding: 1rem;
+    }
+}
+.x-store-vip-icon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    &.store-Recharge-icon{
+        background: url(./../../../assets/images/home/icon/store_Recharge_icon.png) no-repeat center;
+        background-size: auto 100%;
+    }
+    &.store-useStore-icon{
+        background: url(./../../../assets/images/home/icon/store_useStore_icon.png) no-repeat center;
+        background-size: auto 100%;
+    }
+    &.store-member-icon{
+        background: url(./../../../assets/images/home/icon/store_member_icon.png) no-repeat center;
+        background-size: auto 100%;
+    }
+    &.store-instruct-icon{
+        background: url(./../../../assets/images/home/icon/store_instruct_icon.png) no-repeat center;
+        background-size: auto 100%;
+    }
+    &.store-telephonlogo-icon{
+        background: url(./../../../assets/images/home/icon/store_telephonlogo_icon.png) no-repeat center;
+        background-size: auto 100%;
+    }
+}
+
+/* 会员服务信息 end */
