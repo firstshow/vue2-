@@ -22,9 +22,10 @@
                     <i class="x-category-icon chinese-food-icon"></i>
                     <p class="margin-top-10">中餐</p>
                 </x-flex-item>
-                <x-flex-item :span="1/4"  @on-click="goStoreList('休闲食品')">
+                <!--<x-flex-item :span="1/4"  @on-click="goStoreList('休闲食品')">-->
+                <x-flex-item :span="1/4"  @on-click="getUser()">
                     <i class="x-category-icon fun-food-icon"></i>
-                    <p class="margin-top-10">休闲食品</p>
+                    <p class="margin-top-10">{{userInfo.username}}</p>
                 </x-flex-item>
                 <x-flex-item :span="1/4"  @on-click="goStoreList('快餐')">
                     <i class="x-category-icon fast-food-icon"></i>
@@ -116,9 +117,9 @@
             getUser(){
                 this.uploadUserInfo({
                     // 需要传的参数
-                    username : ''
+                    username : '123'
                 }).then(function(){
-                    alert("通过接口拿到数据OK");
+                    alert("通过接口拿到数据OK，视图更新");
                 })
             }
         },

@@ -10,8 +10,9 @@
 
         <!-- 激活所需填写的信息 start -->
         <div class="x-vip-activation-info no-padding-top">
-            <x-input title="真实姓名" placeholder="请输入真实姓名"></x-input>
-            <x-input title="手机号码" type="tel" placeholder="请输入手机号码"></x-input>
+            <input type="text" v-model="value">
+            <!--<x-input title="真实姓名" value="111" placeholder="请输入真实姓名"></x-input>-->
+            <x-input title="手机号码" value="value" type="tel" placeholder="请输入手机号码" @on-change="value = $event"></x-input>
             <x-input title="充值金额" type="number" placeholder="请输入充值金额"></x-input>
         </div>
         <!-- 激活所需填写的信息 end -->
@@ -26,7 +27,7 @@
     export default {
         data () {
             return {
-
+                value : '1'
             }
         },
         methods:{

@@ -12,9 +12,9 @@ import * as modules from './modules'
  * 注册Vuex插件
  * */
 Vue.use(Vuex)
-
 export default new Vuex.Store({
     modules,
     actions,
-    getters
+    getters,
+    strict: process.env.NODE_ENV !== 'production' // 当开发模式时候，启用严格模式
 })

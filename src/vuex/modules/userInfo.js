@@ -15,10 +15,16 @@ const state = JSON.parse(window.localStorage.getItem("userInfo")) ||  {
 const mutations = {
     /**
      * 更新用户基本信息
+     * @param state 状态
+     * @param data 获得的数据
      * */
     [types.UPLOAD_USER_INFO] (state, data) {
+        alert("我是mutation，我拿到的数据是："+data.username);
         try {
             Object.assign(state, data);
+
+            saveToSession("testData",data.username);
+
             console.log(state);
             // 更新后的数据存储到本地
             saveToSession('userInfo',state);

@@ -1,7 +1,7 @@
 <template>
     <div class="x-simple-item" flex="main:left cross:center" :class="{ 'x-item-border' : hasBottomBorder }" v-tap.stop="{methods : clickMe }">
         <slot name="beforeContent"></slot>
-        <div class="x-logo" :style="{width: logoSize , height: logoSize}">
+        <div class="x-logo" flex-box="0" :style="{width: logoSize , height: logoSize}">
             <img src="./../../assets/images/demo/demo_logo.png" alt="logo">
         </div>
         <div class="x-content" flex="dir:top main:center cross:left">

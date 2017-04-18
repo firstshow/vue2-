@@ -43,7 +43,7 @@
     export default {
         data () {
             return {
-
+                aa : '111'
             }
         },
         methods:{

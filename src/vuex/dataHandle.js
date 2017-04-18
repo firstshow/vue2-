@@ -7,8 +7,8 @@ let localStorage = window.localStorage;
 let sessionStorage = window.sessionStorage;
 
 /**
- * 将更新后的信息，存储到localStorage中
- * 及需要永久保存在本地的数据 关闭浏览器后也还存在的
+ * 将更新后的信息，存储到sessionStorage中
+ * 及需要暂时保存在本地的数据 关闭浏览器后及清除
  * */
 export const saveToSession = (key,value) => {
     sessionStorage.setItem(key, JSON.stringify(value))
@@ -16,7 +16,7 @@ export const saveToSession = (key,value) => {
 
 /**
  * 将更新后的信息，存储到localStorage中
- * 及需要暂时保存在本地的数据 关闭浏览器后及清除
+ * 及需要永久保存在本地的数据 关闭浏览器后也还存在的
  * */
 export const saveToLocal = (key,value) => {
     localStorage.setItem(key, JSON.stringify(value))
